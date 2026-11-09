@@ -3,10 +3,11 @@
 
 name: Call Feature Flags Project Workflow
 
-on:
-    pull_request:
-        types: [opened, ready_for_review, review_requested, synchronize, converted_to_draft, reopened]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#     pull_request:
+#         types: [opened, ready_for_review, review_requested, synchronize, converted_to_draft, reopened]
+# 
 permissions: {}
 
 jobs:

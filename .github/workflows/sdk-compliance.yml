@@ -5,12 +5,13 @@ permissions:
   packages: read
   pull-requests: write
 
-on:
-  pull_request:
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#   push:
+#     branches:
+#       - main
+# 
 jobs:
   compliance:
     name: PostHog Ruby (${{ matrix.mode }}) compliance

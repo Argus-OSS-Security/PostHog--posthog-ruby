@@ -1,8 +1,9 @@
 name: 'Handle stale issues and PRs'
-on:
-    schedule:
-        - cron: '30 9 * * 1-5'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#     schedule:
+#         - cron: '30 9 * * 1-5'
+# 
 permissions:
     contents: read
     issues: write
